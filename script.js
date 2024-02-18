@@ -5,7 +5,7 @@ const nav = document.getElementById('navbar');
 const loadingSpinner = document.getElementById('loading-spinner');
 
 // Define the URL of the external API
-const url = "https://api.noroff.dev/api/v1/gamehub";
+const url = "http://gamehub.local/wp-json/wc/store/products";
 
 // Get the product-list container element
 const productContainer = document.querySelector(".game-row");
