@@ -1,0 +1,2236 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+  font-size: 102px;
+  line-height: 100px;
+  font-weight: 700;
+  color: white;
+  font-style: normal;
+}
+/* Catalog Name*/
+h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  color: white;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* "The most secure page" */
+h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: white;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+/* ProductName */
+h4 {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 28px;
+  color: white;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+p {
+  font-size: 10px;
+  color: white;
+ }
+
+button {
+  color: white;
+  width: 185px;
+  height: 48px;
+  background: #E55B13;
+  border-radius: 80px;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  border: none;
+}
+
+img {
+  cursor: pointer;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+ }
+
+ body {
+  width: 100%;
+  background-color: #010922;
+  overflow-x: hidden;
+ }
+
+ /* Header starts here */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 0px white;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 10px 100px;
+  background: #010922 ;
+  width: 100%;
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: orange;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width:30%;
+  height: 2px;
+  background: orange;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+#lg-bag {
+  display: none;
+}
+
+/* Header starts here */
+
+#cat{
+  margin: 10px 50px;
+  position: absolute;
+  display: flex;
+  top: 170px;
+}
+
+#cat .cat2{
+  position: relative;
+  width: 1350px;
+  height: 200px;
+  left: 190px;
+  top: 0px;
+}
+
+#cat .catimg {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+}
+
+#cat .action {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+}
+
+#cat .casual {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  margin-left: 420px;
+}
+
+#cat .coop {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  margin-left: 820px;
+}
+
+#cat .battle {
+  display: none;
+}
+
+#cat .coop :hover {
+  background: rgba(0, 0, 0, 0.5);
+  border: 4px solid #E55B13;
+  border-radius: 20px;
+  transition: 0.2s ease;
+}
+
+#cat .action :hover {
+  background: rgba(0, 0, 0, 0.5);
+  border: 4px solid #E55B13;
+  border-radius: 20px;
+  transition: 0.2s ease;
+}
+
+#cat .casual :hover {
+  background: rgba(0, 0, 0, 0.5);
+  border: 4px solid #E55B13;
+  border-radius: 20px;
+  transition: 0.2s ease;
+}
+
+/* Banner starts here */
+
+#banners {
+  margin: 2px 5px;
+  position: absolute;
+  top: 450px;
+}
+
+#banners .ban {
+  position: relative;
+  width: 1400px;
+  height: 450px;
+  left: 16%;
+}
+
+#banners .topsellers{
+  position: absolute;
+  width: 400px;
+  height: 408px;
+}
+
+#banners .newreleases{
+  position: absolute;
+  left: 440px;
+}
+
+#banners .comingsoon{
+  position: absolute;
+  left: 880px;
+}
+
+#banners .titles{
+  width: 400px;
+  height: 50px;
+  position: relative;
+  display: flex;
+}
+
+#banners .bantitle {
+  color: white;
+  position: absolute;
+  bottom: 50%;
+}
+
+#banners .viewmore {
+  color: white;
+  position: absolute;
+  bottom: 20%;
+  left: 75%;
+}
+
+#banners .h {
+  position: absolute;
+  width: 1px;
+  height: 408px;
+  border: 0 none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  left: 105%;
+}
+
+#banners .pro {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 350px;
+  top: 5px;
+}
+
+#banners .pro1{
+  position: absolute;
+  display: flex;
+  width: 400px;
+  height: 105px;
+}
+
+#banners .pro2{
+  position: absolute;
+  display: flex;
+  width: 400px;
+  height: 105px;
+  margin-top: 120px;
+}
+
+#banners .pro3{
+  position: absolute;
+  display: flex;
+  width: 400px;
+  height: 105px;
+  margin-top: 240px;
+}
+
+#banners .prodt {
+  bottom: 60%;
+  position: absolute;
+  margin-left: 80px;
+  letter-spacing: 1px;
+}
+
+#banners .moneyt{
+  bottom: 15%;
+  position: absolute;
+  margin-left: 81px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+
+#banners img {
+  width: 75px;
+  height: 100px;
+}
+
+#banners h1{
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 0px;
+  letter-spacing: 1px;
+}
+
+#banners h4{
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#banners .viewmore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 98px;
+  height: 24px;
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: -0.035em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background-color: #010922;
+  border: 2px solid #E55B13;
+  border-radius: 10px;
+  line-height: 0px;
+  text-decoration: none;
+}
+
+#banners .viewmore:hover{
+  border: 3px solid #FFFFFF;
+  font-size: 17px;
+}
+
+#banners .comingsoon .moneyt {
+  font-size: 14px;
+}
+
+
+
+
+
+/* Downbar starts here */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  top: 1000px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 19.27%, rgba(0, 0, 0, 0.3) 23.96%, rgba(0, 0, 0, 0.3) 29.17%, rgba(0, 0, 0, 0.3) 54.17%, rgba(229, 91, 19, 0.5) 100%);
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+footer .col2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+footer .col3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+footer .logo {
+  margin-bottom: 5px;
+}
+
+footer h5 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 5px 0;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 5px;
+}
+
+footer .follow {
+  margin-top: 10px;
+}
+
+footer .follow i {
+  color: #FFFFFF;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+footer .install .row img {
+  border: 1px solid #E55B13;
+  border-radius: 12px;
+
+}
+
+footer .install img {
+  margin: 5px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #E55B13;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+footer strong {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Media Query Starts Here */
+
+@media (max-width:1440px){
+
+
+  .section-p1 {
+    padding: 10px 10px;
+   }
+
+
+
+  #cat{
+    margin: 10px 10px;
+  }
+
+  #cat .cat2{
+    position: relative;
+    width: 1300px;
+    height: 200px;
+    left: 100px;
+    top: 0px;
+  }
+
+  #cat .action {
+    margin-left: 0px;
+    left: 0px;
+  }
+
+  #cat .casual {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    margin-left: 410px;
+  }
+
+  #cat .coop {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    margin-left: 810px;
+  }
+
+/* Banner starts here */
+
+#banners {
+  margin: 2px 2px;
+}
+
+#banners .ban {
+  position: relative;
+  width: 1300px;
+  height: 410px;
+  left: 8%;
+}
+
+/* Products All Games Starts Here */
+
+#products {
+  margin: 10px 50px;
+  position: absolute;
+  top: 910px;
+  left: 50px;
+}
+
+#products .pro {
+  height: 360px;
+}
+
+#products .pro .money {
+  color: white;
+  position: absolute;
+  right: 12px;
+  bottom: 65px;
+}
+
+}
+
+@media (max-width:1280px) {
+
+  .section-p1 {
+    padding: 20px 5px;
+   }
+
+  #header img {
+    width: 200px;
+    height: 110px;
+  }
+
+  #header {
+    padding: 20px 40px;
+ 
+  }
+
+  /* Header starts here */
+
+  #cat{
+    margin: 10px 140px;
+    left: 140px;
+  }
+
+  #cat .cat2{
+    position: relative;
+    width: 700px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+  }
+
+  #cat .catimg {
+    position: absolute;
+    width: 210px;
+    height: 110px;
+  }
+
+  #cat .action {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+  }
+
+  #cat .casual {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-left: 240px;
+  }
+  
+  #cat .coop {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-left: 480px;
+  }
+
+  /* Banner starts here */
+
+  #banners {
+    margin: 10px 120px;
+    position: absolute;
+    top: 300px;
+  }
+
+  #banners .ban {
+    position: relative;
+    width: 750px;
+    height: 350px;
+    left: 145px;
+  }
+
+  #banners .titles{
+    width: 250px;
+    height: 50px;
+    position: relative;
+    display: flex;
+  }
+
+  #banners .bantitle {
+    position: absolute;
+    bottom: 50%;
+    left: 25%;
+  }
+
+  #banners .topsellers{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+  }
+
+  #banners .newreleases{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+    left: 250px;
+  }
+  
+  #banners .comingsoon{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+    left: 500px;
+  }
+
+  #banners .pro {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 90px;
+    top: 5px;
+  }
+
+  #banners .pro1{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 90px;
+  }
+  
+  #banners .pro2{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 90px;
+    margin-top: 100px;
+  }
+  
+  #banners .pro3{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 108px;
+    margin-top: 200px;
+  }
+
+
+  #banners .h {
+    display: none;
+    position: absolute;
+    width: 1px;
+    height: 350px;
+    border: 0 none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    left: 80%;
+    top: 45px;
+  }
+
+  #banners img {
+    width: 70px;
+    height: 90px;
+  }
+
+  #banners .prodt {
+    bottom: 65%;
+    position: absolute;
+    margin-left: 74px;
+    letter-spacing: 1px;
+  }
+
+  #banners .moneyt{
+    bottom: 20%;
+    position: absolute;
+    margin-left: 75px;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  #banners h1{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 0px;
+    letter-spacing: 1px;
+  }
+
+  #banners h4{
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  #banners .comingsoon .moneyt {
+    font-size: 12px;
+  }
+
+  #banners button{
+    display: none;
+  }
+
+  #banners .viewmore {
+    display: none;
+  }
+
+
+/* Products All Games Starts Here */
+
+  #products {
+  margin: 10px 130px;
+  position: absolute;
+  top: 700px;
+  left: 120px;
+  }
+
+  #products .pro {
+    padding: 6px 13px;
+    height: 235px;
+  }
+
+  #products img{
+    width: 120px;
+    height: 150px;
+    border-radius: 6px;
+  }
+
+  #products .pro .money {
+    position: absolute;
+    right: 2px;
+    bottom: 47px;
+    font-size: 14px;
+  }
+
+  #products .addtocart {
+    width: 87px;
+    height: 22px;
+    font-size: 12px;
+    position: absolute;
+    left: 19%;
+    bottom: 3px;
+  }
+
+  #products .allgames{
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  #products h4 {
+    font-size: 15px;
+  }
+
+  #products .star{
+    font-size: 11px;
+  }
+
+  /* footer starst here */
+
+footer .logo {
+  display: none;
+}
+
+footer {
+  top: 800px;
+}
+
+
+}
+
+
+@media (max-width:1024px) {
+
+  .section-p1 {
+    padding: 20px 5px;
+   }
+
+  #header img {
+    width: 200px;
+    height: 110px;
+  }
+
+  #header {
+    padding: 20px 40px;
+ 
+  }
+
+  /* Header starts here */
+
+  #cat{
+    margin: 10px 15px;
+    left: 140px;
+  }
+
+  #cat .cat2{
+    position: relative;
+    width: 700px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+  }
+
+  #cat .catimg {
+    position: absolute;
+    width: 210px;
+    height: 110px;
+  }
+
+  #cat .action {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+  }
+
+  #cat .casual {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-left: 240px;
+  }
+  
+  #cat .coop {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-left: 480px;
+  }
+
+  /* Banner starts here */
+
+  #banners {
+    margin: 10px 10px;
+    position: absolute;
+    top: 300px;
+  }
+
+  #banners .ban {
+    position: relative;
+    width: 750px;
+    height: 350px;
+    left: 145px;
+  }
+
+  #banners .titles{
+    width: 250px;
+    height: 50px;
+    position: relative;
+    display: flex;
+  }
+
+  #banners .bantitle {
+    position: absolute;
+    bottom: 50%;
+    left: 25%;
+  }
+
+  #banners .topsellers{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+  }
+
+  #banners .newreleases{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+    left: 250px;
+  }
+  
+  #banners .comingsoon{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+    left: 500px;
+  }
+
+  #banners .pro {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 108px;
+    top: 5px;
+  }
+
+  #banners .pro1{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 108px;
+  }
+  
+  #banners .pro2{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 108px;
+    margin-top: 100px;
+  }
+  
+  #banners .pro3{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 108px;
+    margin-top: 200px;
+  }
+
+
+  #banners .h {
+    display: none;
+    position: absolute;
+    width: 1px;
+    height: 350px;
+    border: 0 none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    left: 80%;
+    top: 45px;
+  }
+
+  #banners img {
+    width: 70px;
+    height: 90px;
+  }
+
+  #banners .prodt {
+    bottom: 65%;
+    position: absolute;
+    margin-left: 74px;
+    letter-spacing: 1px;
+  }
+
+  #banners .moneyt{
+    bottom: 20%;
+    position: absolute;
+    margin-left: 75px;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  #banners h1{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 0px;
+    letter-spacing: 1px;
+  }
+
+  #banners h4{
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  #banners .comingsoon .moneyt {
+    font-size: 12px;
+  }
+
+  #banners button{
+    display: none;
+  }
+
+  #banners .viewmore {
+    display: none;
+  }
+
+
+/* Products All Games Starts Here */
+
+  #products {
+  margin: 10px 10px;
+  position: absolute;
+  top: 700px;
+  left: 120px;
+  }
+
+  #products .pro {
+    padding: 6px 13px;
+    height: 235px;
+  }
+
+  #products img{
+    width: 120px;
+    height: 150px;
+    border-radius: 6px;
+  }
+
+  #products .pro .money {
+    position: absolute;
+    right: 2px;
+    bottom: 47px;
+    font-size: 14px;
+  }
+
+  #products .addtocart {
+    width: 87px;
+    height: 22px;
+    font-size: 12px;
+    position: absolute;
+    left: 19%;
+    bottom: 3px;
+  }
+
+  #products .allgames{
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  #products h4 {
+    font-size: 15px;
+  }
+
+  #products .star{
+    font-size: 11px;
+  }
+
+  /* footer starst here */
+
+
+}
+
+
+@media (max-width:820px) {
+
+  .section-p1 {
+    padding: 40px 5px;
+   }
+
+  #header img {
+    width: 200px;
+    height: 110px;
+  }
+
+  #header {
+    padding: 20px 40px;
+ 
+  }
+
+  /* Header starts here */
+
+  #cat{
+    margin: 10px 2px;
+    left: 0px;
+  }
+
+  #cat .cat2{
+    position: relative;
+    width: 700px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+  }
+
+  #cat .catimg {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+  }
+
+  #cat .action {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+  }
+
+  #cat .casual {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-left: 240px;
+  }
+  
+  #cat .coop {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-left: 480px;
+  }
+
+  /* Banner starts here */
+
+  #banners {
+    margin: 10px 2px;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+  }
+
+  #banners .ban {
+    position: relative;
+    width: 750px;
+    height: 350px;
+    left: 45px;
+  }
+
+  #banners .titles{
+    width: 250px;
+    height: 50px;
+    position: relative;
+    display: flex;
+  }
+
+  #banners .bantitle {
+    position: absolute;
+    bottom: 50%;
+    left: 25%;
+  }
+
+  #banners .topsellers{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+  }
+
+  #banners .newreleases{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+    left: 250px;
+  }
+  
+  #banners .comingsoon{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+    left: 500px;
+  }
+
+  #banners .pro {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 108px;
+    top: 5px;
+  }
+
+  #banners .pro1{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 108px;
+  }
+  
+  #banners .pro2{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 108px;
+    margin-top: 100px;
+  }
+  
+  #banners .pro3{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 108px;
+    margin-top: 200px;
+  }
+
+
+  #banners .h {
+    display: none;
+    position: absolute;
+    width: 1px;
+    height: 350px;
+    border: 0 none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    left: 80%;
+    top: 45px;
+  }
+
+  #banners img {
+    width: 70px;
+    height: 90px;
+  }
+
+  #banners .prodt {
+    bottom: 65%;
+    position: absolute;
+    margin-left: 74px;
+    letter-spacing: 1px;
+  }
+
+  #banners .moneyt{
+    bottom: 20%;
+    position: absolute;
+    margin-left: 75px;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  #banners h1{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 0px;
+    letter-spacing: 1px;
+  }
+
+  #banners h4{
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  #banners .comingsoon .moneyt {
+    font-size: 12px;
+  }
+
+  #banners button{
+    display: none;
+  }
+
+  #banners .viewmore {
+    display: none;
+  }
+
+
+/* Products All Games Starts Here */
+
+  #products {
+  margin: 10px 10px;
+  position: absolute;
+  top: 700px;
+  left: 30px;
+  }
+
+  #products .pro {
+    padding: 6px 13px;
+    height: 235px;
+  }
+
+  #products img{
+    width: 120px;
+    height: 150px;
+    border-radius: 6px;
+  }
+
+  #products .pro .money {
+    position: absolute;
+    right: 2px;
+    bottom: 47px;
+    font-size: 14px;
+  }
+
+  #products .addtocart {
+    width: 87px;
+    height: 22px;
+    font-size: 12px;
+    position: absolute;
+    left: 19%;
+    bottom: 3px;
+  }
+
+  #products .allgames{
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  #products h4 {
+    font-size: 15px;
+  }
+
+  #products .star{
+    font-size: 11px;
+  }
+
+  /* footer starst here */
+
+footer .logo {
+  display: none;
+}
+
+footer {
+  top: 750px;
+}
+
+}
+
+@media (max-width:799px) {
+
+  .section-p1 {
+    padding: 40px 5px;
+   }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 200px;
+    background: #010922;
+    box-shadow: 0 5px 0px white;
+    padding: 85px 0 0 10px;
+    transition: 0.3;
+  }
+
+  #navbar.active{
+    right: 0px;
+    z-index: 1;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #navbar .bar {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i{
+    color: #FFFFFF;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 24px;
+    top: 40px;
+    left: 30px;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+
+  #header img {
+    width: 200px;
+    height: 110px;
+  }
+
+  /* Header starts here */
+
+  #cat{
+    margin: 5px 5px;
+    left: 60px;
+  }
+
+  #cat .cat2{
+    position: relative;
+    width: 620px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+  }
+
+  #cat .catimg {
+    position: absolute;
+    width: 190px;
+    height: 90px;
+  }
+
+  #cat .casual {
+    margin-left: 210px;
+  }
+  
+  #cat .coop {
+    margin-left: 420px;
+  }
+
+  /* Banner starts here */
+
+  #banners {
+    margin: 2px 2px;
+    position: absolute;
+    top: 280px;
+    left: 60px;
+  }
+
+  #banners .ban {
+    position: relative;
+    width: 650px;
+    height: 340px;
+    left: 0px;
+  }
+
+  #banners .titles{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    display: flex;
+  }
+
+  #banners .bantitle {
+    position: absolute;
+    bottom: 50%;
+    left: 13%;
+  }
+
+  #banners .topsellers{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+  }
+
+  #banners .newreleases{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    left: 210px;
+  }
+  
+  #banners .comingsoon{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    left: 430px;
+  }
+
+  #banners .pro {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 80px;
+    top: 5px;
+  }
+
+  #banners .pro1{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 108px;
+  }
+  
+  #banners .pro2{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 108px;
+    margin-top: 90px;
+  }
+  
+  #banners .pro3{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 108px;
+    margin-top: 180px;
+  }
+
+  #banners .h {
+    display: none;
+  }
+
+  #banners img {
+    width: 60px;
+    height: 80px;
+  }
+
+  #banners .prodt {
+    bottom: 65%;
+    position: absolute;
+    margin-left: 64px;
+    letter-spacing: 1px;
+  }
+
+  #banners .moneyt{
+    bottom: 30%;
+    position: absolute;
+    margin-left: 65px;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  #banners h1{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 0px;
+    letter-spacing: 1px;
+  }
+
+  #banners h4{
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  #banners .comingsoon .moneyt {
+    font-size: 12px;
+  }
+
+  #banners button{
+    display: none;
+  }
+
+  #banners .viewmore {
+    display: none;
+  }
+
+
+/* Products All Games Starts Here */
+
+  #products {
+  margin: 6px 4px;
+  position: absolute;
+  top: 650px;
+  left: 40px;
+  }
+
+  #products .pro {
+    padding: 6px 12px;
+    height: 215px;
+  }
+
+  #products img{
+    width: 105px;
+    height: 135px;
+    border-radius: 6px;
+  }
+
+  #products h4 {
+    font-size: 13px;
+  }
+
+  #products .pro .money {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+    font-size: 12px;
+  }
+
+  #products .addtocart {
+    width: 85px;
+    height: 20px;
+    font-size: 11px;
+    position: absolute;
+    left: 13%;
+    bottom: 3px;
+  }
+
+  #products .allgames{
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+
+  #products .star{
+    font-size: 9px;
+  }
+
+  /* footer starst here */
+
+footer .logo {
+  display: none;
+}
+
+
+
+}
+
+@media (max-width:650px) {
+
+  .section-p1 {
+    padding: 10px 0px;
+   }
+
+
+  #header img {
+    width: 200px;
+    height: 110px;
+  }
+
+  /* Header starts here */
+
+  #cat{
+    margin: 5px 5px;
+    left: 0px;
+  }
+
+  #cat .cat2{
+    position: relative;
+    width: 620px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+  }
+
+  #cat .catimg {
+    position: absolute;
+    width: 190px;
+    height: 90px;
+  }
+
+  #cat .casual {
+    margin-left: 210px;
+  }
+  
+  #cat .coop {
+    margin-left: 420px;
+  }
+
+  /* Banner starts here */
+
+  #banners {
+    margin: 2px 0px;
+    position: absolute;
+    top: 280px;
+    left: 0px;
+  }
+
+  #banners .ban {
+    position: relative;
+    width: 650px;
+    height: 340px;
+    left: 0px;
+  }
+
+  #banners .titles{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    display: flex;
+  }
+
+  #banners .bantitle {
+    position: absolute;
+    bottom: 50%;
+    left: 13%;
+  }
+
+  #banners .topsellers{
+    position: absolute;
+    width: 190px;
+    height: 320px;
+  }
+
+  #banners .newreleases{
+    position: absolute;
+    width: 190px;
+    height: 320px;
+    left: 210px;
+  }
+  
+  #banners .comingsoon{
+    position: absolute;
+    width: 190px;
+    height: 320px;
+    left: 430px;
+  }
+
+  #banners .pro {
+    position: relative;
+    display: block;
+    width: 190px;
+    height: 80px;
+    top: 5px;
+  }
+
+  #banners .pro1{
+    position: absolute;
+    display: flex;
+    width: 190px;
+    height: 82px;
+  }
+  
+  #banners .pro2{
+    position: absolute;
+    display: flex;
+    width: 190px;
+    height: 82px;
+    margin-top: 90px;
+  }
+  
+  #banners .pro3{
+    position: absolute;
+    display: flex;
+    width: 190px;
+    height: 82px;
+    margin-top: 180px;
+  }
+
+  #banners .h {
+    display: none;
+  }
+
+  #banners img {
+    width: 60px;
+    height: 80px;
+  }
+
+  #banners .prodt {
+    bottom: 65%;
+    position: absolute;
+    margin-left: 64px;
+    letter-spacing: 1px;
+  }
+
+  #banners .moneyt{
+    bottom: 30%;
+    position: absolute;
+    margin-left: 65px;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+
+  #banners h1{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 0px;
+    letter-spacing: 1px;
+  }
+
+  #banners h4{
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  #banners .comingsoon .moneyt {
+    font-size: 8px;
+  }
+
+  #banners button{
+    display: none;
+  }
+
+  #banners .viewmore {
+    display: none;
+  }
+
+
+/* Products All Games Starts Here */
+
+  #products {
+  margin: 6px 1px;
+  position: absolute;
+  top: 650px;
+  left: 20px;
+  }
+
+  #products .pro {
+    padding: 6px 6px;
+    height: 215px;
+  }
+
+  #products img{
+    width: 105px;
+    height: 135px;
+    border-radius: 6px;
+  }
+
+  #products h4 {
+    font-size: 13px;
+  }
+
+  #products .pro .money {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+    font-size: 12px;
+  }
+
+  #products .addtocart {
+    width: 85px;
+    height: 20px;
+    font-size: 11px;
+    position: absolute;
+    left: 13%;
+    bottom: 3px;
+  }
+
+  #products .allgames{
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+
+  #products .star{
+    font-size: 9px;
+  }
+
+  /* footer starst here */
+
+footer .logo {
+  display: none;
+}
+
+
+}
+
+@media (max-width: 477px) {
+
+
+  .section-p1 {
+    padding: 10px 1px;
+   }
+
+  #header {
+    padding: 10px 20px;
+  }
+
+  #header img {
+    width: 120px;
+    height: 70px;
+  }
+
+  /* Header starts here */
+
+  #cat{
+    margin: 2px 50px;
+    left: 8px;
+  }
+
+  #cat .cat2{
+    position: relative;
+    width: 345px;
+    height: 190px;
+    left: 0px;
+    top: 0px;
+    display: block;
+  }
+
+  #cat .catimg {
+    position: absolute;
+    width: 150px;
+    height: 90px;
+  }
+
+  #cat .action {
+    position: absolute;
+    width: 155px;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+  }
+
+  #cat .casual {
+    margin-left: 180px;
+    width: 155px;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+  }
+  
+  #cat .coop {
+    margin-left: 0px;
+    margin-top: 100px;
+    width: 155px;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+  }
+
+  #cat .battle {
+    display: inline;
+    position: absolute;
+    width: 155px;
+    height: 85px;
+    margin-left: 180px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+  }
+
+  /* Banner starts here */
+
+  #banners {
+    display: none;
+  }
+
+
+/* Products All Games Starts Here */
+
+  #products {
+  margin: 6px 4px;
+  position: absolute;
+  top: 310px;
+  left: 0px;
+  }
+
+  #products .pro {
+    padding: 10px 12px;
+    height: 190px;
+  }
+
+  #products .pro2 {
+    padding: 10px 15px;
+    display: initial;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    position: relative;
+    height: 190px;
+  }
+
+  #products img{
+    width: 93px;
+    height: 115px;
+    border-radius: 6px;
+  }
+
+  #products h4 {
+    font-size: 11px;
+  }
+
+  #products .pro .money {
+    position: absolute;
+    right: 7px;
+    bottom: 32px;
+    font-size: 10px;
+  }
+
+  #products .pro2 .money {
+    position: absolute;
+    right: 12px;
+    bottom: 32px;
+    font-size: 10px;
+  }
+
+  #products .addtocart {
+    width: 80px;
+    height: 15px;
+    font-size: 10px;
+    position: absolute;
+    left: 13%;
+    bottom: 3px;
+  }
+
+  #products .allgames{
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  #products .star{
+    font-size: 7px;
+  }
+
+  #products .pro-container2 {
+    padding-top: 5px;
+    
+  }
+
+  /* footer starst here */
+
+footer .logo {
+  display: none;
+}
+
+footer {
+  top: 500px;
+}
+
+footer .col{
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+footer .col2{
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+footer .col3{
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+footer .install {
+  margin-left: 10px;
+}
+
+footer .install h5 {
+  padding-bottom: 10px;
+}
+
+footer .follow h5 {
+  padding-bottom: 10px;
+}
+
+footer h5 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+ footer p {
+  font-size: 11px;
+  margin: 0 0 3px 0;
+ }
+
+ footer a {
+  font-size: 13px;
+  margin-bottom: 8px;
+ }
+
+ footer .install img {
+  width: 40%;
+ }
+
+ footer strong {
+  font-weight: 600;
+  letter-spacing: 2px;
+ }
+  
+}
+
+@media (max-width: 415px){
+
+  #cat{
+    margin: 10px 50px;
+    left: 0px;
+  }
+
+  #cat .cat2{
+    width: 300px;
+    height: 180px;
+  }
+
+  #cat .catimg {
+    position: absolute;
+    width: 130px;
+    height: 80px;
+  }
+
+  #cat .action {
+    width: 132px;
+    height: 80px;
+    border-radius: 12px;
+  }
+
+  #cat .casual {
+    margin-left: 150px;
+    width: 132px;
+    height: 80px;
+
+  }
+  
+  #cat .coop {
+    margin-left: 0px;
+    margin-top: 100px;
+    width: 132px;
+    height: 80px;
+  }
+
+  #cat .battle {
+    display: inline;
+    width: 132px;
+    height: 75px;
+    margin-left: 150px;
+    margin-top: 100px;
+
+  }
+
+
+/* Products All Games Starts Here */
+
+#products .pro {
+  padding: 6px 5px;
+  height: 185px;
+}
+
+#products .pro2 {
+  padding: 6px 5px;
+  display: initial;
+}
+
+
+
+}
+
+@media (max-width: 375px){
+
+  #cat{
+    margin: 10px 50px;
+    left: 0px;
+  }
+
+  #cat .cat2{
+    width: 300px;
+    height: 180px;
+  }
+
+  #cat .catimg {
+    position: absolute;
+    width: 130px;
+    height: 80px;
+  }
+
+  #cat .action {
+    width: 132px;
+    height: 80px;
+    border-radius: 12px;
+  }
+
+  #cat .casual {
+    margin-left: 150px;
+    width: 132px;
+    height: 80px;
+
+  }
+  
+  #cat .coop {
+    margin-left: 0px;
+    margin-top: 100px;
+    width: 132px;
+    height: 80px;
+  }
+
+  #cat .battle {
+    display: inline;
+    width: 132px;
+    height: 75px;
+    margin-left: 150px;
+    margin-top: 100px;
+
+  }
+
+
+/* Products All Games Starts Here */
+
+#products .pro {
+  padding: 6px 5px;
+  height: 185px;
+}
+
+#products .pro2 {
+  padding: 6px 5px;
+  display: initial;
+}
+
+
+
+}
+
+@media (max-width: 320px){
+
+  #cat{
+    margin: 10px 10px;
+  }
+
+  #cat .cat2{
+    width: 300px;
+    height: 180px;
+  }
+
+  #cat .catimg {
+    position: absolute;
+    width: 130px;
+    height: 80px;
+  }
+
+  #cat .action {
+    width: 132px;
+    height: 80px;
+    border-radius: 12px;
+  }
+
+  #cat .casual {
+    margin-left: 150px;
+    width: 132px;
+    height: 80px;
+
+  }
+  
+  #cat .coop {
+    margin-left: 0px;
+    margin-top: 100px;
+    width: 132px;
+    height: 80px;
+  }
+
+  #cat .battle {
+    display: inline;
+    width: 132px;
+    height: 75px;
+    margin-left: 150px;
+    margin-top: 100px;
+
+  }
+
+
+/* Products All Games Starts Here */
+
+#products .pro {
+  padding: 6px 5px;
+  height: 185px;
+}
+
+#products .pro2 {
+  padding: 6px 5px;
+  display: initial;
+}
+
+
+
+}

@@ -1,0 +1,1530 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+  font-size: 102px;
+  font-weight: 700;
+  color: white;
+  font-style: normal;
+}
+/* Catalog Name*/
+h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  color: white;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* "The most secure page" */
+h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: white;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+/* ProductName */
+h4 {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 28px;
+  color: white;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+p {
+  font-size: 10px;
+  color: white;
+ }
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 0.2s ease;
+  border: 2px solid #FFFFFF;
+}
+
+.section-p1 {
+  padding: 15px 5px;
+ }
+
+ body {
+  width: 100%;
+  background-color: #010922;
+  overflow-x: hidden;
+ }
+
+ /* Header starts here */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 0px white;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 10px 100px;
+  background: #010922 ;
+  width: 100%;
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: orange;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width:30%;
+  height: 2px;
+  background: orange;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+#lg-bag {
+  display: none;
+}
+
+
+/* Menu Starts Here */
+
+#menu {
+  margin: 10px 420px;
+  position: absolute;
+  display: flex;
+  top: 190px;
+}
+
+#menu .bar {
+  padding: 5px 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu a {
+  color: #FFFFFF;
+  background-color: #E55B13;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+#menu .cart{
+  background-color: rgba(255, 255, 255, 0.4);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  font-size: 25px;
+  width: 265px;
+  height: 45px;
+}
+
+#menu .customer{
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  font-size: 25px;
+  width: 265px;
+  height: 45px;
+  margin-left: 30px;
+}
+
+#menu .payment {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  font-size: 25px;
+  width: 265px;
+  height: 45px;
+  margin-left: 30px;
+}
+
+#menu .i {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+}
+
+#menu button:hover {
+  transition: 0.2s ease;
+  background-color: #E55B13;
+}
+
+
+/* shipping info starts here */ 
+
+#shippingaddress {
+  margin: 0px 300px;
+  position: absolute;
+  top: 365px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  padding:25px;
+  height: 450px;
+}
+
+.container form{
+  padding:30px 30px;
+  width:900px;
+  height: 570px;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.03) ;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 35px;
+  line-height: 0px;
+  margin-bottom: 25px;
+  color: #FFFFFF;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:10px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+#shippingaddress .a {
+  position: absolute;
+  left: 69%;
+  top: 92%;
+}
+
+
+#shippingaddress .a {
+  position: absolute;
+  left: 70%;
+  top: 94%;
+  background-color: #E55B13;
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  border-radius: 80px;
+  padding: 0px 22px;
+  font-size: 30px;
+  width: 235px;
+  height: 50px;
+}
+
+#shippingaddress .i{
+  display: inline-flex;
+  align-items: center;
+  font-size: 35px;
+  padding: 0px 2px;
+}
+
+/* Summary starts here */
+
+
+
+#summary {
+  margin: 20px 180px;
+  position: absolute;
+  top: 285px;
+  left: 1100px;
+}
+
+#summary .sum {
+  position: relative;
+  display: block;
+  background-color:  rgba(0, 0, 0, 0.3); 
+  width: 500px;
+  height: 340px;
+}
+
+#summary .order {
+  letter-spacing: 0.095em;
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+#summary .pro1{
+  display: flex;
+  position: absolute;
+  width: 500px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#summary .pro2{
+  display: flex;
+  position: absolute;
+  width: 500px;
+  margin-top: 85px;
+  margin-left: 10px;
+}
+
+#summary .pro3{
+  display: flex;
+  position: absolute;
+  width: 500px;
+  margin-top: 140px;
+  margin-left: 10px;
+}
+
+#summary .proname {
+  font-size: 19px;
+  text-transform: none;
+}
+
+#summary .promoney {
+  font-size: 19px;
+  margin-left: 290px;
+}
+
+#summary .pro2 .promoney {
+  margin-left: 320px;
+}
+
+#summary .pro3 .promoney {
+  margin-left: 345px;
+}
+
+#summary .total {
+  display: flex;
+  position: absolute;
+  width: 500px;
+  margin-top: 250px;
+  margin-left: 10px;
+}
+
+#summary .totaltext {
+  font-size: 30px;
+}
+
+#summary .money {
+  font-size: 28px;
+  margin-left: 300px;
+}
+
+
+
+
+
+/* Downbar starts here */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  top: 950px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 19.27%, rgba(0, 0, 0, 0.3) 23.96%, rgba(0, 0, 0, 0.3) 29.17%, rgba(0, 0, 0, 0.3) 54.17%, rgba(229, 91, 19, 0.5) 100%);
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+footer .col2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+footer .col3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+footer .logo {
+  margin-bottom: 5px;
+}
+
+footer h5 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 5px 0;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 5px;
+}
+
+footer .follow {
+  margin-top: 10px;
+}
+
+footer .follow i {
+  color: #FFFFFF;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+footer .install .row img {
+  border: 1px solid #E55B13;
+  border-radius: 12px;
+
+}
+
+footer .install img {
+  margin: 5px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #E55B13;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+footer strong {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+
+
+/* Media Query Starts Here */
+
+@media (max-width:1440px) {
+
+  .section-p1 {
+    padding: 20px 20px;
+   }
+
+   #menu {
+    margin: 10px 200px;
+    position: absolute;
+    display: flex;
+  }
+  
+  #menu .bar {
+    padding: 5px 110px;
+    position: relative;
+  }
+  
+  #menu button {
+    color: #FFFFFF;
+    background-color: #E55B13;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+  
+  #menu .cart{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    font-size: 22px;
+    width: 250px;
+    height: 40px;
+  }
+  
+  #menu .customer{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    font-size: 22px;
+    width: 250px;
+    height: 40px;
+    margin-left: 15px;
+  }
+  
+  #menu .payment {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    font-size: 22px;
+    width: 250px;
+    height: 40px;
+    margin-left: 15px;
+  }
+  
+  #menu .i {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 10px;
+  }
+
+/* shipping info starts here */
+
+#shippingaddress {
+  margin: 0px 220px;
+  position: absolute;
+  top: 340px;
+}
+
+/* Summary starts here */
+
+
+#summary {
+  margin: 20px 450px;
+  position: absolute;
+  top: 850px;
+  left: 0px;
+}
+
+#shippingaddress .a {
+  position: absolute;
+  left: 69%;
+  top: 92%;
+}
+
+#shippingaddress .continuebutton{
+  padding: 0px 21px;
+  font-size: 27px;
+  width: 220px;
+  height: 45px;
+}
+
+/* Downbar starts here */
+
+footer {
+  top: 1350px;
+}
+
+
+}
+
+@media (max-width:1024px) {
+
+  .section-p1 {
+    padding: 10px 5px;
+   }
+
+   #header img {
+    width: 200px;
+    height: 110px;
+  }
+
+   /* Product Starts Here */
+
+   #menu {
+    margin: 10px 150px;
+    top: 150px;
+  }
+  
+  #menu .bar {
+    padding: 5px 2px;
+  }
+
+  #menu .cart{
+    font-size: 21px;
+    width: 220px;
+    height: 40px;
+  }
+
+  #menu .customer{
+    font-size: 21px;
+    width: 220px;
+    height: 40px;
+  }
+
+  #menu .delivery{
+    font-size: 21px;
+    width: 220px;
+    height: 40px;
+  }
+
+  #menu .payment{
+    font-size: 21px;
+    width: 220px;
+    height: 40px;
+  }
+
+
+  /* shipping info starts here */ 
+
+  #shippingaddress {
+    margin: 2px 20px;
+    top: 300px;
+  }
+
+  #shippingaddress .a {
+    position: absolute;
+    left: 69%;
+    top: 92%;
+  }
+
+  #shippingaddress .continuebutton{
+    padding: 0px 21px;
+    font-size: 27px;
+    width: 220px;
+    height: 45px;
+  }
+
+  /* Summary starts here */
+
+
+#summary {
+  margin: 20px 250px;
+  top: 850px;
+  left: 0px;
+}
+
+}
+
+
+@media (max-width:768px) {
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 200px;
+    background: #010922;
+    box-shadow: 0 5px 0px white;
+    padding: 85px 0 0 10px;
+    transition: 0.3;
+  }
+
+  #navbar.active{
+    right: 0px;
+    z-index: 1;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #navbar .bar {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i{
+    color: #FFFFFF;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 24px;
+    top: 40px;
+    left: 30px;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+
+  #header {
+    padding: 20px 40px;
+  }
+
+  #header img {
+    width: 170px;
+    height: 100px;
+  }
+
+  .section-p1 {
+    padding: 10px 10px;
+   }
+
+  /* Product Starts Here */
+
+  #menu {
+    margin: 10px 2px;
+    display: flex;
+  }
+
+  #menu .bar {
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #menu .cart{
+    font-size: 18px;
+    width: 200px;
+    height: 35px;
+    margin-left: 15px;
+  }
+
+  #menu .customer{
+    font-size: 18px;
+    width: 200px;
+    height: 35px;
+  }
+
+  #menu .delivery{
+    font-size: 18px;
+    width: 200px;
+    height: 35px;
+    margin-top: 15px;
+  }
+
+  #menu .payment{
+    font-size: 18px;
+    width: 200px;
+    height: 35px;
+  }
+
+  /* shipping info starts here */ 
+
+  #shippingaddress {
+    margin: 0px 30px;
+    position: absolute;
+    top: 310px;
+  }
+
+  .container{
+    padding:25px;
+    height: 400px;
+  }
+
+  .container form{
+    padding:30px 30px;
+    width:650px;
+  }
+
+  #shippingaddress .a {
+    position: absolute;
+    left: 71%;
+    top: 100%;
+  }
+  
+  #shippingaddress .continuebutton{
+      padding: 0px 10px;
+      font-size: 17px;
+      width: 150px;
+      height: 35px;
+  }
+
+  #shippingaddress .i {
+      font-size: 20px;
+      padding: 10px 6px;
+  }
+
+
+  /* Summary starts here */
+
+  #summary {
+    margin: 20px 170px;
+    top: 810px;
+    left: 0px;
+  }
+
+  #summary .sum {
+    background-color:  rgba(0, 0, 0, 0.3); 
+    width: 400px;
+    height: 230px;
+  }
+
+  #summary .order {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  #summary .pro1{
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  #summary .pro2{
+    width: 400px;
+    margin-top: 55px;
+    margin-left: 10px;
+  }
+
+  #summary .pro3{
+    width: 400px;
+    margin-top: 80px;
+    margin-left: 10px;
+  }
+
+  #summary .proname {
+    font-size: 14px;
+  }
+
+  #summary .promoney {
+    font-size: 13px;
+    margin-left: 245px;
+  }
+
+  #summary .pro2 .promoney {
+    margin-left: 267px;
+  }
+  
+  #summary .pro3 .promoney {
+    margin-left: 287px;
+  }
+
+  #summary .total {
+    width: 400px;
+    margin-top: 160px;
+    margin-left: 10px;
+  }
+
+  #summary .totaltext {
+    font-size: 20px;
+  }
+
+  #summary .money {
+    font-size: 18px;
+    margin-left: 265px;
+  }
+
+
+  /* Downbar starts here */
+
+  footer {
+    top: 1000px;
+  }
+
+  footer .logo {
+    display: none;
+  }
+  
+  
+  footer .col{
+    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 5px;
+  }
+  
+  footer .col2{
+    margin-top: 0px;
+    margin-left: 3px;
+  }
+  
+  footer .col3{
+    margin-top: 0px;
+    margin-left: 3px;
+  }
+  
+  footer .install {
+    margin-left: 10px;
+  }
+  
+  footer h5 {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  
+   footer p {
+    font-size: 11px;
+    margin: 0 0 3px 0;
+   }
+  
+   footer a {
+    font-size: 13px;
+    margin-bottom: 8px;
+   }
+  
+   footer .install img {
+    width: 40%;
+   }
+  
+   footer strong {
+    font-weight: 600;
+    letter-spacing: 2px;
+   }  
+
+
+}
+
+
+@media (max-width: 477px) {
+
+  .section-p1 {
+    padding: 10px 7px;
+   }
+
+   #header {
+    padding: 5px 2px;
+  }
+
+   #header img {
+    width: 100px;
+    height: 60px;
+  }
+
+  /* Product Starts Here */
+
+  #menu {
+    margin: 10px 60px;
+    display: block;
+  }
+
+  #menu .bar {
+    padding: 5px 1px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #menu .cart{
+    position: absolute;
+    font-size: 14px;
+    width: 150px;
+    height: 30px;
+    margin-left: 0px;
+  }
+
+  #menu .customer{
+    position: absolute;
+    font-size: 14px;
+    width: 150px;
+    height: 30px;
+    margin-left: 165px;
+  }
+
+  #menu .payment{
+    position: absolute;
+    font-size: 14px;
+    width: 150px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+
+
+  /* shipping info starts here */ 
+
+  #shippingaddress {
+    margin: 0px 16px;
+    position: absolute;
+    top: 310px;
+  }
+
+  .container{
+    padding:25px;
+    height: 300px;
+  }
+
+  .container form{
+    padding:30px 30px;
+    width:350px;
+  }
+
+  .container form .row .col .title{
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+  }
+
+  #shippingaddress .a {
+    position: absolute;
+    left: 58%;
+    top: 120%;
+  }
+
+  #shippingaddress .continuebutton{
+    padding: 0px 10px;
+    font-size: 14px;
+    width: 122px;
+    height: 30px;
+  }
+
+  #shippingaddress .i {
+    font-size: 20px;
+    padding: 10px 6px;
+  }
+
+
+  /* Summary starts here */
+
+  #summary {
+    margin: 20px 60px;
+    top: 740px;
+    left: 0px;
+  }
+
+  #summary .sum {
+    background-color:  rgba(0, 0, 0, 0.3); 
+    width: 310px;
+    height: 175px;
+  }
+
+  #summary .order {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  #summary .pro1{
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  #summary .pro2{
+    width: 300px;
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+
+  #summary .pro3{
+    width: 300px;
+    margin-top: 55px;
+    margin-left: 10px;
+  }
+
+  #summary .proname {
+    font-size: 12px;
+  }
+
+  #summary .promoney {
+    font-size: 11px;
+    margin-left: 180px;
+  }
+
+  #summary .pro2 .promoney {
+    margin-left: 199px;
+  }
+  
+  #summary .pro3 .promoney {
+    margin-left: 216px;
+  }
+
+  #summary .total {
+    width: 300px;
+    margin-top: 120px;
+    margin-left: 10px;
+  }
+
+  #summary .totaltext {
+    font-size: 16px;
+  }
+
+  #summary .money {
+    font-size: 14px;
+    margin-left: 202px;
+  }
+
+
+  /* Downbar starts here */
+
+  footer .logo {
+    display: none;
+  }
+  
+  footer {
+    top: 950px;
+  }
+  
+  footer .col{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  
+  footer .col2{
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+  
+  footer .col3{
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+  
+  footer .install {
+    margin-left: 10px;
+  }
+  
+  footer .install h5 {
+    padding-bottom: 10px;
+  }
+  
+  footer .follow h5 {
+    padding-bottom: 10px;
+  }
+  
+  footer h5 {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  
+   footer p {
+    font-size: 11px;
+    margin: 0 0 3px 0;
+   }
+  
+   footer a {
+    font-size: 13px;
+    margin-bottom: 8px;
+   }
+  
+   footer .install img {
+    width: 40%;
+   }
+  
+   footer strong {
+    font-weight: 600;
+    letter-spacing: 2px;
+   }
+}
+
+@media (max-width:415px) {
+
+
+  .section-p1 {
+    padding: 10px 1px;
+   }
+
+  #menu {
+    margin: 10px 35px;
+    display: block;
+  }
+
+  #shippingaddress {
+    margin: 0px 20px;
+    position: absolute;
+    top: 250px;
+  }
+
+  .container{
+    padding:10px;
+    height: 450px;
+  }
+
+  .container form{
+    padding:30px 10px;
+    width:350px;
+  }
+
+  #shippingaddress .a {
+    position: absolute;
+    left: 60%;
+    top: 94%;
+  }
+
+  #shippingaddress .continuebutton{
+    padding: 0px 10px;
+    font-size: 14px;
+    width: 130px;
+    height: 30px;
+  }
+
+  #shippingaddress .i {
+    font-size: 20px;
+    padding: 10px 6px;
+  }
+
+
+  #summary {
+    margin: 20px 20px;
+    top: 770px;
+    left: 0px;
+  }
+}
+
+@media (max-width:375px) {
+
+
+  .section-p1 {
+    padding: 10px 1px;
+   }
+
+  #menu {
+    margin: 10px 20px;
+    display: block;
+  }
+
+  #shippingaddress {
+    margin: 0px 1px;
+    position: absolute;
+    top: 250px;
+  }
+
+  .container{
+    padding:10px;
+    height: 450px;
+  }
+
+  .container form{
+    padding:30px 10px;
+    width:350px;
+  }
+
+  #shippingaddress .a {
+    position: absolute;
+    left: 60%;
+    top: 94%;
+  }
+
+  #shippingaddress .continuebutton{
+    padding: 0px 10px;
+    font-size: 14px;
+    width: 130px;
+    height: 30px;
+  }
+
+  #shippingaddress .i {
+    font-size: 20px;
+    padding: 10px 6px;
+  }
+
+
+  #summary {
+    margin: 20px 20px;
+    top: 770px;
+    left: 0px;
+  }
+}
+
+@media (max-width:320px) {
+
+
+  .section-p1 {
+    padding: 10px 0px;
+   }
+
+   #header {
+    padding: 5px 2px;
+  }
+
+   #header img {
+    width: 100px;
+    height: 60px;
+  }
+
+  /* Product Starts Here */
+
+  #menu {
+    margin: 10px 2px;
+    display: block;
+  }
+
+  #menu .bar {
+    padding: 5px 2px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #menu .cart{
+    position: absolute;
+    font-size: 14px;
+    width: 150px;
+    height: 30px;
+    margin-left: 0px;
+  }
+
+  #menu .customer{
+    position: absolute;
+    font-size: 14px;
+    width: 150px;
+    height: 30px;
+    margin-left: 160px;
+  }
+
+  #menu .payment{
+    position: absolute;
+    font-size: 14px;
+    width: 150px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+
+  /* shipping info starts here */ 
+
+
+  #shippingaddress {
+    margin: 0px 5px;
+    top: 330px;
+  }
+
+  .container{
+    padding:5px;
+    height: 250px;
+  }
+
+  .container form{
+    padding:30px 10px;
+    width:300px;
+  }
+
+  .container form .row .col .title{
+    font-size: 22px;
+    margin-bottom: 25px;
+    padding-bottom: 3px;
+  }
+
+  #shippingaddress .a {
+    position: absolute;
+    left: 58%;
+    top: 125%;
+  }
+ 
+
+  #shippingaddress .continuebutton{
+    position: relative;
+    padding: 0px 10px;
+    font-size: 14px;
+    width: 119px;
+    height: 30px;
+  }
+
+  #shippingaddress .i {
+    font-size: 20px;
+    padding: 10px 6px;
+  }
+
+
+  /* Summary starts here */
+
+  #summary {
+    margin: 20px 3px;
+    top: 780px;
+    left: 0px;
+  }
+
+  #summary .sum {
+    background-color:  rgba(0, 0, 0, 0.3); 
+    width: 310px;
+    height: 175px;
+  }
+
+  #summary .order {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  #summary .pro1{
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  #summary .pro2{
+    width: 300px;
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+
+  #summary .pro3{
+    width: 300px;
+    margin-top: 55px;
+    margin-left: 10px;
+  }
+
+  #summary .proname {
+    font-size: 12px;
+  }
+
+  #summary .promoney {
+    font-size: 11px;
+    margin-left: 180px;
+  }
+
+  #summary .pro2 .promoney {
+    margin-left: 199px;
+  }
+  
+  #summary .pro3 .promoney {
+    margin-left: 216px;
+  }
+
+  #summary .total {
+    width: 300px;
+    margin-top: 120px;
+    margin-left: 10px;
+  }
+
+  #summary .totaltext {
+    font-size: 16px;
+  }
+
+  #summary .money {
+    font-size: 14px;
+    margin-left: 202px;
+  }
+
+
+  /* Downbar starts here */
+
+  footer .logo {
+    display: none;
+  }
+  
+  footer {
+    top: 950px;
+  }
+  
+  footer .col{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  
+  footer .col2{
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+  
+  footer .col3{
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+  
+  footer .install {
+    margin-left: 10px;
+  }
+  
+  footer .install h5 {
+    padding-bottom: 10px;
+  }
+  
+  footer .follow h5 {
+    padding-bottom: 10px;
+  }
+  
+  footer h5 {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  
+   footer p {
+    font-size: 11px;
+    margin: 0 0 3px 0;
+   }
+  
+   footer a {
+    font-size: 13px;
+    margin-bottom: 8px;
+   }
+  
+   footer .install img {
+    width: 40%;
+   }
+  
+   footer strong {
+    font-weight: 600;
+    letter-spacing: 2px;
+   }
+  
+}
