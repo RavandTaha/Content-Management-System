@@ -158,6 +158,24 @@ button {
 
   /* API CALLS CSS */
 
+   /* Wordpress API starts here */
+
+#wordpress {
+  margin: 10px 200px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px;
+  top: 300px;
+}
+
+#wordpress img {
+  width: 220px;
+  height: 300px;
+  border-radius: 10px;
+}
+
 
 
  /* Game item */

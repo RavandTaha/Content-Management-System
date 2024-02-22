@@ -2,13 +2,8 @@ const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
 
+
 const loadingSpinner = document.getElementById('loading-spinner');
-
-// Define the URL of the external API
-const url = "https://api.noroff.dev/api/v1/gamehub";
-
-// Get the product-list container element
-const productContainer = document.querySelector(".game-row");
 
 
 if (bar) {
@@ -24,48 +19,50 @@ if (close) {
 }
 
 
-async function getAllGames() {
-  try {
-    const response = await fetch(url);
+// endpoint URL for products
+const apiUrl = 'http://gamehub.local/wp-json/wc/store/products';
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
+// Fetch data from the API
+fetch(apiUrl)
+    .then(response => {
+        // Check if response is successful
+        if (!response.ok) {
+            throw new Error('Failed to fetch products');
+        }
+        return response.json(); // response data as JSON
+    })
+    .then(products => {
+        // Process the fetched products
+        const productList = document.getElementById('wordpress');
 
-    const results = await response.json();
+        products.forEach(product => {
+            // Create a clickable product element
+            const productElement = document.createElement('div');
+            productElement.classList.add('product-item');
+            
 
-    productContainer.innerHTML = "";
+            // Create image element
+            const productImage = document.createElement('img');
+            productImage.src = product.images[0].src; 
+            productImage.alt = product.name;
+            productImage.classList.add('product-image');
+            productImage.addEventListener('click', () => {
+                window.open(product.permalink, '_blank');
+            });
+            productElement.appendChild(productImage);
 
-    for (let i = 0; i < results.length; i++) {
-      if (i === 16) {
-        break;
-      }
+            // Create product details
+            const productDetails = document.createElement('div');
+            productDetails.classList.add('product-details');
+            productDetails.innerHTML = `
+              <h2>${product.name}</h2>`;
 
-      productContainer.innerHTML += `<a href="product1.html?id=${results[i].id}">
-        <div class="game-item">
-          <img src="${results[i].image}" alt="${results[i].title}"/>
-          <div class="game-description">
-            <p>${results[i].title}</p>
-          </div>
-          <div class="game-price">
-            <span class="old-price">${results[i].price}$</span>
-            <span class="new-price">${results[i].discountedPrice}$</span>
-          </div>
-        </div>
-      </a>`;
-    }
-  } catch (error) {
-    console.error("Error fetching games:", error);
-    productContainer.innerHTML = "There was an error fetching our games, please contact us or wait.";
-  }
-}
+            productElement.appendChild(productDetails);
 
-getAllGames();
-
- 
-
-
-
-
-
+            productList.appendChild(productElement); 
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching products:', error);
+    });
 
