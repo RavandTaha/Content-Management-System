@@ -417,6 +417,40 @@ img {
 }
 
 
+/* wordpress product starts here */
+
+#product-details {
+  text-align: center; /* Center align content */
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#product-details img {
+  width: 520px;
+  height: 600px;
+  border-radius: 10px;
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  margin-top: 40px; /* Add some space between image and h2 */
+  margin-bottom: 30px; /* Add some space between image and desc */
+
+}
+
+#product-details h2 {
+font-size: 70px;
+margin-top: 200px; /* Add some space between image and h2 */
+}
+
+#product-details p{
+  font-size: 15px;
+  letter-spacing: 1.5px;
+
+}
+
+
+
+
 
 /* Downbar starts here */
 
@@ -626,6 +660,37 @@ footer strong {
     padding: 8px 17px;
     height: 340px;
   }
+
+  /* wordpress product starts here */
+
+#product-details {
+  text-align: center; /* Center align content */
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#product-details img {
+  width: 420px;
+  height: 500px;
+  border-radius: 10px;
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  margin-top: 40px; /* Add some space between image and h2 */
+  margin-bottom: 30px; /* Add some space between image and desc */
+
+}
+
+#product-details h2 {
+font-size: 50px;
+margin-top: 250px; /* Add some space between image and h2 */
+}
+
+#product-details p{
+  font-size: 10px;
+  letter-spacing: 1.5px;
+
+}
 
 }
 
@@ -1280,6 +1345,37 @@ footer strong {
 footer {
   top: 750px;
 }
+
+  /* wordpress product starts here */
+
+  #product-details {
+    text-align: center; /* Center align content */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #product-details img {
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    margin-top: 40px; /* Add some space between image and h2 */
+    margin-bottom: 30px; /* Add some space between image and desc */
+  
+  }
+  
+  #product-details h2 {
+  font-size: 40px;
+  margin-top: 0px; /* Add some space between image and h2 */
+  }
+  
+  #product-details p{
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  
+  }
 
 
 }
