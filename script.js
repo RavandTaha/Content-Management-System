@@ -18,12 +18,10 @@ if (close) {
   })
 }
 
-
 // endpoint URL for products
 const apiUrl = 'http://gamehub.local/wp-json/wc/store/products';
 
-
-// Fetch data from the API
+// Fetch data from the API to display product list
 fetch(apiUrl)
     .then(response => {
         // Check if response is successful
@@ -41,9 +39,9 @@ fetch(apiUrl)
             const productElement = document.createElement('div');
             productElement.classList.add('product-item');
             
-            // Create anchor element
+            // Create anchor element with dynamic product ID
             const productLink = document.createElement('a');
-            productLink.href = 'product1.html'; // Link to product1.html
+            productLink.href = `product.html?productId=${product.id}`; // Link to product details with dynamic product ID
             productElement.appendChild(productLink); // Append anchor to product container
 
             // Create image element inside the anchor
@@ -68,35 +66,47 @@ fetch(apiUrl)
         console.error('Error fetching products:', error);
     });
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const productId = 28; // 
-      const apiUrl2 = `http://gamehub.local/wp-json/wc/store/products/${productId}`;
+// Fetch product details based on the dynamically fetched product ID from the URL
+document.addEventListener("DOMContentLoaded", () => {
+    // Extract product ID from URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('productId');
   
-      fetch(apiUrl2)
-          .then(response => {
-              if (!response.ok) {
-                  throw new Error('Failed to fetch product');
-              }
-              return response.json(); 
-          })
-          .then(product => {
-              // Display product details
-              const productDetailsContainer = document.getElementById('product-details');
-              if (productDetailsContainer) {
-                  productDetailsContainer.innerHTML = `
-                      <h2>${product.name}</h2>
-                      <img src="${product.images[0].src}" alt="${product.name}">
-                      <p>Description: ${product.description}</p>
+    if (!productId) {
+        console.error('Product ID not found in URL');
+        return;
+    }
+  
+    const apiUrl2 = `http://gamehub.local/wp-json/wc/store/products/${productId}`;
+  
+    fetch(apiUrl2)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch product');
+            }
+            return response.json(); 
+        })
+        .then(product => {
+            // Display product details
+            const productDetailsContainer = document.getElementById('product-details');
+            if (productDetailsContainer) {
+                productDetailsContainer.innerHTML = `
+                    <h2>${product.name}</h2>
+                    <img src="${product.images[0].src}" alt="${product.name}">
+                    <p>Description: ${product.description}</p>
+                `;
+            } else {
+                console.error('Product details container not found');
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching product:', error);
+        });
+});
 
-                  `;
-              } else {
-                  console.error('Product details container not found');
-              }
-          })
-          .catch(error => {
-              console.error('Error fetching product:', error);
-          });
-  });
+
+  
+  
 
 
  
